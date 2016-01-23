@@ -1,0 +1,178 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "twitter/bootstrap";
+@import "custom_bootstrap/variables";                 // Your own variable overrides.
+
+
+body {
+	background: #f4f4f4 url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQAB…MUkSNEEQEAAwAAAAAAAAAAAAAAAAAAESFh/9oADAMBAAIRAxEAPwB5GuPkhqMmKpBXOi//2Q==) 0 0 repeat;
+}
+
+/* *********************************
+           Variables
+  ********************************** */
+@navbar-height: 50px;
+@big-logo-padding: 15px; // adjust these 2 values
+@small-logo-padding: 2px; // of bottom padding to look nice
+
+#navbar2 {
+	padding-top: 130px;
+}
+
+example2 .navbar-brand>img {
+  padding: 7px 15px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-top: 10px;
+    text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 90px;
+}
+
+footer {
+	  	background: #7e7e7e;
+	  	color: #dbdbdb;
+	  	font-size: 11px;
+	  	line-height:  13px;
+		margin-top: 25px;
+	  	.container {
+			height: 110px;
+			padding: 10px 0;
+
+			h3 {
+			  	
+			  	color: #ffffff;
+			  	font-size: 14px;
+			  	line-height: 21px;
+			  	font-family: @brand-font;
+			  	margin: 0 0 10px;
+			  	text-transform: uppercase;
+			}
+
+			p {
+			  	margin: 5px 0;
+			}
+
+			.twitter {
+			  	p {
+					padding-right: 15px;
+				}
+
+			  	time a {
+					color: #b4aeae;
+					text-decoration: underline;
+			  	}
+			}
+
+			a {
+			  	color: #dbdbdb;
+			}
+
+			.sitemap a {
+			  	display: block;
+			  	font-size: 12px;
+			 	margin-bottom: 5px;
+			}
+
+			
+
+			.footer-logo {
+			  	float: right;
+			  	margin-top: 20px;
+			  	font-size: 10px;
+			  	text-align: right;
+
+			  	a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+p {
+	margin: 20px 0;
+}
+
+.form-control {
+	box-shadow: none;
+}
+
+.btn {
+	font-family: @brand-font;
+}
+
+
+.wrapper {
+	padding: 0 0 10px 0;
+	header {
+		padding: 0 0;
+		.form-search {
+				width: 200px;
+            	
+         }
+	}
+	.navbar a {
+			text-transform: uppercase;
+			font: 14px @brand-font;
+		}
+}
+
+
+
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+  .navbar-nav { 
+    width: 100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
+  }
+}
+
