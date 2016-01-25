@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		
+		<p>
+			<div class="col-lg-6"> <h1> <%= @project.title %> </h1> </div>
+			<div class="col-lg-6"><a class="pull-right btn btn-lg btn-primary hvr-grow big-btn" href="<%= project_path(@project.id) %>" role="button">Помочь</a></div>
+		</p>
+	</div>
+	
+	<div class="row">
+		<p> 
+			<%= image_tag @project.picture_url, size: '650x350', class: 'leftimg'%>
+			<%= @project.content.html_safe %>
+		</p>
+		<div class="col-lg-offset-5"><a class="btn btn-lg btn-primary hvr-grow big-btn btn-center" href="<%= project_path(@project.id) %>" role="button">Помочь</a></div>
+	</div>
+
+</div>
+
+
+<!-- Гроші кидайте на карточку 4149 4378 5372 9448-->

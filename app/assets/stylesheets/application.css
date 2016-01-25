@@ -12,9 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootsy
  *= require custom_bootstrap/custom_bootstrap
- *= require jquery.ui.all
- *= require slick
+
+ *= require rails_bootstrap_forms
+
  */
 
  

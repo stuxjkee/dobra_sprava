@@ -1,0 +1,22 @@
+  <% if can? :create, News %>
+    <%= link_to "Создать новость", new_news_path, class: 'btn btn-primary' %>
+  <% end %>
+<h1 class="title" align="center"> Новости </h3>
+
+  <% @news.each do |news|%>
+      <div class="col-lg-5">
+
+
+        <p>
+          <%= image_tag news.image_url, width: 135, height: 100, class: 'leftimg' %>
+          <%= link_to news.title, news %> </br>
+
+            <span class="text-muted"> <%= news.created_at %> </span></br>
+          <%= strip_tags news.content.html_safe.truncate(200) %>
+          <%= link_to 'Подробней...', news, class: 'pull-right' %>
+        </p>
+      </br>
+      </div>
+
+  <% end %>
+

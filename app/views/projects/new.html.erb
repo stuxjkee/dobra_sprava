@@ -1,0 +1,26 @@
+<% if @project.errors.empty? %>
+   <div class="alert alert-error">
+    <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<div class="container">
+ <%= bootstrap_form_for @project do |f| %>
+
+  <%= f.text_field :title, placeholder: 'Название проета' %> 
+
+  <%= f.text_field :description, placeholder: 'Краткое описание проекта' %>
+
+  <%= f.number_field :target, placeholder: 'Необходимо собрать (грн)' %>
+
+  <%= f.bootsy_area :content, placeholder: 'Полное описание проета', rows: 15, cols: 100, id: 'bootsy_area' %>  </br>
+
+  <%= f.file_field :picture%>
+
+  <%= f.submit%>
+<% end %>
+</div>
+

@@ -1,0 +1,339 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* projects list */
+.projects {
+
+}
+
+.projects__list {
+
+}
+
+.projects__list__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.list__item__info {
+    display: none;
+
+}
+
+.projects__list__item__title {
+    display: inline-block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.projects__list__item__title:hover {
+    color: #2fb4f2;
+}
+
+.projects__list__item__desc {
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #666;
+}
+
+.projects__list__item__desc:hover {
+    color: #2fb4f2;
+}
+
+/* projects list, v2 */
+
+.projects2 {
+    position: relative;
+}
+
+.projects2 .head_main {
+
+}
+
+.projects2__nav {
+    position: relative;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.projects2__nav a.projects2__nav_tags {
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #F7F6F6;
+    margin: 0px 10px 10px 0px;
+    padding: 0px 10px;
+}
+.projects2__nav a.projects2__nav_tags .fa-facebook-square {
+    font-size: 24px;
+    position: relative;
+    top: 2px;
+    left: -2px;
+}
+.projects2__nav a.projects2__nav_tags .fa-check {
+    color: #00c900;
+    position: relative;
+    left: -2px;
+}
+.projects2__nav a.projects2__nav_tags:hover,
+.projects2__nav a.projects2__nav_tags.active {
+    color: #fff;
+    background-color: #CE0067;
+}
+.projects2__nav a.projects2__nav_tags:hover .fa-facebook-square,
+.projects2__nav a.projects2__nav_tags.active .fa-facebook-square,
+.projects2__nav a.projects2__nav_tags:hover .fa-check,
+.projects2__nav a.projects2__nav_tags.active .fa-check {
+    color: #fff;
+}
+.projects2__nav_sort {
+    display: block;
+    float: right;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+#projects2_sort_sel {
+    width: 228px;
+}
+.projects2__nav_sort .chosen-container-single .chosen-single {
+    font-size: 16px;
+    height: 32px;
+    line-height: 30px;
+    margin-top: -3px;
+}
+.projects2__nav_sort .chosen-container-single .chosen-single div {
+    height: 27px;
+    margin-top: 2px;
+}
+.projects2 .records_count {
+    font-size: 20px;
+    line-height: 32px;
+}
+.projects2 .records_count span {
+    font-size: 28px;
+    color: #CE0067;
+}
+.projects2 .spoiler_title {
+    display: none;
+    float: right;
+    font-size: 14px;
+    margin: 12px 0px 6px 0px;
+}
+
+.projects2 .spoiler_title a {
+    color: #999;
+}
+
+.projects2 .spoiler_title a:hover {
+    color: #2fb4f2;
+}
+
+.projects2 .spoiler_text {
+    display: none;
+}
+
+.projects2 .spoiler_text > div {
+    display: block;
+    clear: both;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.projects2__list {
+    display: block;
+    position: relative;
+}
+
+.projects2__list__item {
+    position: relative;
+    overflow: hidden;
+    width: 289px;
+    height: 360px;
+    padding: 0px 1px 0px 0px;
+    float: left;
+    margin: 0 38px 38px 0px;
+    cursor: pointer;
+}
+.projects2__list__item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+.projects2__list__item a {
+    text-decoration: none;
+}
+
+.projects2__list__item_wrapper {
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    padding: 0px;
+    border-radius: 8px;
+    width: 288px;
+    height: 358px;
+}
+.projects_slider .projects2__list__item_wrapper {
+    position: relative;
+}
+
+.project_slider2__list__control_left a.disabled,
+.project_slider2__list__control_right a.disabled {
+    display: none;
+}
+
+.projects2__list_fw {
+    width: 100%;
+}
+
+.projects2__list__item_btn {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    display: inline-block;
+    max-width: 192px;
+    height: 22px;
+    padding: 11px;
+    background-color: #d5006b;
+    color: #FFFFFF;
+    font-size: 19px;
+    line-height: 21px;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+.projects2__list__item_img {
+    margin: 0px;
+    width: 288px;
+    height: 162px;
+}
+
+.projects2__list__item__tnd {
+    padding: 10px;
+    height: 115px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.projects2__list__item__tnd2 {
+    height: 115px;
+}
+
+.projects2__list__item__title {
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.projects2__list__item__title:hover {
+    color: #2fb4f2;
+}
+
+.projects2__list__item__desc {
+    color: #666666;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.projects2__list__item__desc:hover {
+    color: #2fb4f2;
+}
+
+.projects2__list__item_done .projects2__list__item_img {
+    background-color: #00c900;
+}
+.projects2__list__item_done .projects2__list__item_img img {
+    opacity: 0.8;
+}
+.projects2__list__item_done_label {
+    background-color: #00c900;
+    position: absolute;
+    top: 125px;
+    display: block;
+    opacity: 0.8;
+    text-align: center;
+    width: 266px;
+    height: 16px;
+    padding: 11px;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.projects2__list__item__bar {
+    width: 291px;
+    position: absolute;
+    left:-1px;
+    height: 2px;
+    line-height: 2px;
+    font-size: 2px;
+    background-color: #d9d9d9;
+}
+
+.projects2__list__item__bar span {
+    display: inline-block;
+    height: 2px;
+    background-color: #2fb4f2;
+    max-width: 100%;
+}
+
+.projects2__list__item__collected,
+.projects2__list__item__target {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+.projects2__list__item__collected span,
+.projects2__list__item__target span {
+    font-size: 18px;
+    color: #2fb4f2;
+}
+.projects2__list__item__target {
+    width: auto;
+    float: right;
+    text-align: left;
+}
+.projects2__list__item_centered {
+    width: 269px;
+    float: none;
+    text-align: center;
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+  }
+
+  .big-btn {
+  	width: 200px;
+  }
+
+  .btn-center {
+  	margin: 0 auto;
+  }
+

@@ -1,0 +1,29 @@
+<div class="container">
+<% if can? :create, News %>
+    <%= link_to "Добавить проект", new_project_path , class: 'btn btn-primary' %>
+  <% end %>
+	<h1 align="center"> Актуальные проекты </h1> </br>
+	<ul class="clearfix" id="yw0">
+	<% @projects.each do |p| %>
+		<%= link_to p do %>
+		<li class="projects2__list__item hvr-grow-shadow">
+			<div class="projects2__list__item_wrapper">
+ 			<div class="projects2__list__item_img">
+ 			<img class="webp" width="288" height="162" lazy-src="" src="<%= p.picture_url %>" alt="p.title"> </div>
+			 <div class="projects2__list__item__tnd ">
+				  
+				 	<span class="projects2__list__item__title"><%= p.title %></span><span class="projects2__list__item__desc"><span><%= p.description %></span></span> </div>
+				  
+				 <div class="projects2__list__item__bar">
+				 <span style="<%= p.current / p.target*100%>%;max-width: 100%;"></span>
+				 </div>
+				 <div class="projects2__list__item__collected ">
+				 собрано&nbsp; <%= p.current / p.target*100%>%<br><span><%= p.current %>&nbsp;₴</span> </div>
+				 <div class="projects2__list__item__target ">
+				 цель<br><span><%= p.target %>&nbsp;₴</span> </div>
+			</div>
+		</li>
+		<% end %>
+	<% end %>
+    </ul>
+</div>

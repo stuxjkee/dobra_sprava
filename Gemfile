@@ -6,6 +6,16 @@ gem 'less-rails-bootstrap'
 
 gem "jquery-slick-rails"
 
+gem 'carrierwave', '~> 0.9'
+gem 'bootstrap_form'
+
+gem 'devise'
+gem 'cancancan'
+gem 'rolify'
+
+gem 'bootsy'
+
+
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
