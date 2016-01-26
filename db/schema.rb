@@ -54,6 +54,14 @@ ActiveRecord::Schema.define(version: 201601241056061) do
     t.string   "picture"
   end
 
+  create_table "reports", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "picture"
+  end
+
   create_table "roles", force: true do |t|
     t.string   "name"
     t.integer  "resource_id"

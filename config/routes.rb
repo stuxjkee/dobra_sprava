@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :reports
+
   devise_for :users
   resources :news
   get 'about' => 'welcome#about'
