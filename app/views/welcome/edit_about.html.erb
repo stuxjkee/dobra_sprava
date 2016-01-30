@@ -1,0 +1,5 @@
+
+	<%= bootstrap_form_tag(conroller: 'welcome', action: 'update_about', method: 'post') do  %>
+		  <%= bootsy_area :content, "", placeholder: 'Edit', rows: '20', cols: '100' %>  </br>
+		  <%= submit_tag  "Сохранить", class: 'btn btn-success btn-lg' %>
+	<% end %>

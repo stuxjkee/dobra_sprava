@@ -2,5 +2,5 @@
   <%= f.text_field :title, label: 'Заглавие' %>
   <%= f.bootsy_area :content,placeholder: 'Содержимое', rows: '15', cols: '100' %> </br>
   <%= f.file_field :image%>
-  <%= f.submit :submit %>
+  <%= f.submit "Сохранить", class: 'btn btn-success btn-lg' %>
 <% end %>

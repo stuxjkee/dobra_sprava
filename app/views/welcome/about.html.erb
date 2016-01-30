@@ -1,3 +1,7 @@
+<% if can? :create, News %>
+    <%= link_to "Редактировать информацию", edit_about_path , class: 'btn btn-primary' %>
+  <% end %>
 <div class="container">
-		
+
+	<%= @content.html_safe %>	
 </div>

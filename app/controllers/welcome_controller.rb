@@ -5,7 +5,17 @@ class WelcomeController < ApplicationController
   end
 
   def about
-  	
+  	@content = File.read('about_html') 
+  end
+
+  def edit_about 
+
+  end
+
+  def update_about 
+  	content = params[:content]
+  	File.open('about_html', 'w') { |file| file.write content}
+  	redirect_to '/about'
   end
 
 end

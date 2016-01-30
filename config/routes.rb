@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :news
+
+  get 'about/edit' => 'welcome#edit_about', as: :edit_about 
+  post 'about/edit' => 'welcome#update_about', as: :update_about
+
   get 'about' => 'welcome#about'
 
   mount Bootsy::Engine => '/bootsy', as: 'bootsy'
