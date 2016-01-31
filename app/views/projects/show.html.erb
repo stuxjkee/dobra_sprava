@@ -3,13 +3,18 @@
 		
 		<p>
 			<div class="col-lg-6"> <h1> <%= @project.title %> </h1> </div>
+			<% if can? :destroy, Project %>
+</br> <%= link_to 'Удалить', @project, :confirm => 'Are you sure?',
+          :method => :delete %> | 
+     <%= link_to 'Редактировать', edit_project_path(@project) %>
+  <% end %>
 			<div class="col-lg-6"><a class="pull-right btn btn-lg btn-primary hvr-grow big-btn" href="<%= project_path(@project.id) %>" role="button">Помочь</a></div>
 		</p>
 	</div>
 	
 	<div class="row">
 		<p> 
-			<%= image_tag @project.picture_url, size: '650x350', class: 'leftimg'%>
+			<%= image_tag @project.picture_url, class: 'leftimg bigimg'%>
 			<%= @project.content.html_safe %>
 		</p>
 		<div class="col-lg-offset-5"><a class="btn btn-lg btn-primary hvr-grow big-btn btn-center" href="<%= project_path(@project.id) %>" role="button">Помочь</a></div>

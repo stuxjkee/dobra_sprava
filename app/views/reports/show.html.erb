@@ -1,2 +1,15 @@
-<h1>Reports#show</h1>
-<p>Find me in app/views/reports/show.html.erb</p>
+<div class="span10">
+  <h1> <%= @report.title %> </h1>
+  <% if can? :destroy, Report %>
+</br> <%= link_to 'Удалить', @report, :confirm => 'Are you sure?',
+          :method => :delete %> | 
+     <%= link_to 'Редактировать', edit_report_path(@report) %>
+  <% end %>
+
+  <%= image_tag @report.picture_url, class: 'leftimg bigimg' %>
+
+  <p> <%= @report.content.html_safe %></p>
+    <p class="text-muted"> <%= @report.created_at %></p>
+
+  
+</div>

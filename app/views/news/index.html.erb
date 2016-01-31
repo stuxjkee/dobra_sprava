@@ -12,7 +12,7 @@
           <%= link_to news.title, news, class: 'btn btn-lg' %> </br>
 
             <span class="text-muted"> <%= news.created_at %> </span></br>
-          <%= strip_tags news.content.html_safe.truncate(500) %>
+          <%= strip_tags news.content.truncate(1000) %>
           <%= link_to 'Подробней...', news, class: 'pull-right btn btn-lg' %>
         </p>
       </br>

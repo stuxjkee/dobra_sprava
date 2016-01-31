@@ -1,6 +1,6 @@
-<%= bootstrap_form_for @report do |f| %>
+<%= bootstrap_form_for @news do |f| %>
   <%= f.text_field :title, label: 'Заглавие' %>
   <%= f.bootsy_area :content, rows: '15', cols: '100' %> </br>
-  <%= f.file_field :picture%>
+  <%= f.file_field :image%>
   <%= f.submit "Сохранить", class: 'btn btn-success btn-lg' %>
 <% end %>

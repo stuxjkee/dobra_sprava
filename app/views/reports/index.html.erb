@@ -1,2 +1,22 @@
-<h1>Reports#index</h1>
-<p>Find me in app/views/reports/index.html.erb</p>
+  <% if can? :create, Report %>
+    <%= link_to "Создать отчет", new_report_path, class: 'btn btn-primary' %>
+  <% end %>
+<h1 class="title" align="center"> Последние отчеты </h3>
+
+  <% @reports.each do |report|%>
+      <div class="row">
+
+
+        <p>
+          <%= image_tag report.picture_url, width: 300, height: 200, class: 'leftimg' %>
+          <%= link_to report.title, report, class: 'btn btn-lg' %> </br>
+
+            <span class="text-muted"> <%= report.created_at %> </span></br>
+          <%= strip_tags report.content.truncate(1000) %>
+          <%= link_to 'Подробней...', report, class: 'pull-right btn btn-lg' %>
+        </p>
+      </br>
+      </div>
+
+  <% end %>
+

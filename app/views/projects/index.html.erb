@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="projects">
 <% if can? :create, News %>
     <%= link_to "Добавить проект", new_project_path , class: 'btn btn-primary' %>
   <% end %>
@@ -9,7 +9,7 @@
 		<li class="projects2__list__item hvr-grow-shadow">
 			<div class="projects2__list__item_wrapper">
  			<div class="projects2__list__item_img">
- 			<img class="webp" width="288" height="162" lazy-src="" src="<%= p.picture_url %>" alt="p.title"> </div>
+ 			<img class="webp" width="258" height="162" lazy-src="" src="<%= p.picture_url %>" alt="p.title"> </div>
 			 <div class="projects2__list__item__tnd ">
 				  
 				 	<span class="projects2__list__item__title"><%= p.title %></span><span class="projects2__list__item__desc"><span><%= p.description %></span></span> </div>
