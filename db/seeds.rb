@@ -11,3 +11,8 @@ user.email = "stuxjkee@sigaint.com"
 user.password = "test1234"
 user.add_role "admin"
 user.save
+
+
+Order.create(fullname: 'Andrew Largeman', amount: '228', project_id: Project.last.id)
+Order.create(fullname: 'John Lennon', amount: '1488', project_id: Project.first.id)
+Order.create(fullname: 'Jack Sparrow', amount: 'over9999', project_id: Project.last.id)
